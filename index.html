@@ -3,70 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analytiikan Hiekkalaatikko</title>
+    <title>Käpykauppa Premium | Luonnon parhaat aarteet</title>
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5CXGQZX4');</script>
 
-                <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5CXGQZX4');</script>
-<!-- End Google Tag Manager -->
-   
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; background: #f4f4f9; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        button { padding: 10px 20px; cursor: pointer; border: none; border-radius: 4px; background: #007bff; color: white; margin: 5px; }
-        button.secondary { background: #6c757d; }
-        .contact-form { display: flex; flex-direction: column; }
-        input { margin-bottom: 10px; padding: 8px; }
+        :root { --forest-green: #2d5a27; --wood-brown: #5d4037; --bg-light: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg-light); color: #333; }
+        header { background: var(--forest-green); color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544259509-90696953934d?auto=format&fit=crop&w=1200&q=80'); background-size: cover; height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img { height: 180px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .product-info { padding: 20px; }
+        .price { font-size: 1.25rem; font-weight: bold; color: var(--forest-green); }
+        button { width: 100%; padding: 12px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; margin-top: 10px; transition: 0.3s; }
+        .btn-buy { background: var(--forest-green); color: white; }
+        .btn-buy:hover { background: #1e3d1a; }
+        .footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CXGQZX4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    
-    <h1>📊 Analytiikan harjoitussivu</h1>
-    <p>Tämä sivu on luotu GitHub Pagesilla GTM- ja GA4-testausta varten.</p>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CXGQZX4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <div class="card">
-        <h3>1. Painikeklikkaukset</h3>
-        <p>Harjoittele "Click Classes" ja "Click ID" triggereitä.</p>
-        <button id="paapainike">Tärkeä painike (ID: paapainike)</button>
-        <button class="secondary tarjous-nappi">Tarjousnappi (Class: tarjous-nappi)</button>
+    <header>
+        <div class="logo">🌲 <strong>KÄPYKAUPPA</strong></div>
+        <nav>
+            <a href="#" onclick="dataLayer.push({'event': 'nav_click', 'link_name': 'koti'});">Koti</a>
+            <a href="#" onclick="dataLayer.push({'event': 'nav_click', 'link_name': 'tarjoukset'});">Tarjoukset</a>
+            <a href="#" id="contact-link">Ota yhteyttä</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Luonnon luksusta kotiisi</h1>
+        <p>Tutustu Suomen laajimpaan käpyvalikoimaan</p>
+    </section>
+
+    <div class="container">
+        <h2>Uutuudet</h2>
+        <div class="grid">
+            <div class="product-card">
+                <div class="product-img">🌲</div>
+                <div class="product-info">
+                    <h3>Männynkäpy Classic</h3>
+                    <p>Aito ja perinteinen suomalainen männynkäpy.</p>
+                    <div class="price">2.50 €</div>
+                    <button class="btn-buy" onclick="pushToCart('Männynkäpy Classic', 2.50, 'Mänty')">Lisää ostoskoriin</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">✨</div>
+                <div class="product-info">
+                    <h3>Luksuskäpy (Kulta)</h3>
+                    <p>Käsin kullattu keräilyharvinaisuus.</p>
+                    <div class="price">49.90 €</div>
+                    <button class="btn-buy" onclick="pushToCart('Luksuskäpy (Kulta)', 49.90, 'Premium')">Lisää ostoskoriin</button>
+                </div>
+            </div>
+
+            <div class="product-card" id="orava-special">
+                <div class="product-img">🐿️</div>
+                <div class="product-info">
+                    <h3>Oravan suosikki</h3>
+                    <p>Sisältää extra-paljon siemeniä.</p>
+                    <div class="price">5.90 €</div>
+                    <button class="btn-buy" onclick="pushToCart('Oravan suosikki', 5.90, 'Erikois')">Lisää ostoskoriin</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="card">
-    <h3>🌲 Käpykaupan ostoskori</h3>
-    <p>Valitse paras käpy kokoelmaasi:</p>
-    
-    <button onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({
-        'event': 'lisaa_ostoskoriin',
-        'tuote_nimi': 'Luksuskäpy',
-        'hinta': 49.90,
-        'kategoria': 'Premium'
-    });">Osta Luksuskäpy ✨</button>
+    <footer class="footer">
+        &copy; 2026 Käpykauppa Oy - Analytiikan harjoitussivu
+    </footer>
 
-    <button onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({
-        'event': 'lisaa_ostoskoriin',
-        'tuote_nimi': 'Oravan suosikki',
-        'hinta': 5.50,
-        'kategoria': 'Perus'
-    });">Osta Oravan suosikki 🐿️</button>
-</div>
-
-    <div class="card">
-        <h3>3. Yhteydenottolomake</h3>
-        <p>Harjoittele lomakkeen lähetystä (Form Submission).</p>
-        <form class="contact-form" id="tilaus-lomake">
-            <input type="email" placeholder="Sähköpostiosoitteesi" required>
-            <button type="submit">Tilaa uutiskirje</button>
-        </form>
-    </div>
-
-    <hr>
-    <p><small>Vinkki: Avaa selaimen Console (F12) nähdäksesi mitä tapahtuu.</small></p>
+    <script>
+        // Funktio datan lähettämiseen (selkeyttää koodia)
+        function pushToCart(name, price, category) {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'add_to_cart',
+                'ecommerce': {
+                    'currency': 'EUR',
+                    'value': price,
+                    'items': [{
+                        'item_name': name,
+                        'price': price,
+                        'item_category': category
+                    }]
+                }
+            });
+            alert(name + ' lisätty ostoskoriin!');
+        }
+    </script>
 </body>
 </html>
