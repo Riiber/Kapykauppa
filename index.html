@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytiikan Hiekkalaatikko</title>
+    
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; background: #f4f4f9; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        button { padding: 10px 20px; cursor: pointer; border: none; border-radius: 4px; background: #007bff; color: white; margin: 5px; }
+        button.secondary { background: #6c757d; }
+        .contact-form { display: flex; flex-direction: column; }
+        input { margin-bottom: 10px; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h1>📊 Analytiikan harjoitussivu</h1>
+    <p>Tämä sivu on luotu GitHub Pagesilla GTM- ja GA4-testausta varten.</p>
+
+    <div class="card">
+        <h3>1. Painikeklikkaukset</h3>
+        <p>Harjoittele "Click Classes" ja "Click ID" triggereitä.</p>
+        <button id="paapainike">Tärkeä painike (ID: paapainike)</button>
+        <button class="secondary tarjous-nappi">Tarjousnappi (Class: tarjous-nappi)</button>
+    </div>
+
+    <div class="card">
+    <h3>🌲 Käpykaupan ostoskori</h3>
+    <p>Valitse paras käpy kokoelmaasi:</p>
+    
+    <button onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({
+        'event': 'lisaa_ostoskoriin',
+        'tuote_nimi': 'Luksuskäpy',
+        'hinta': 49.90,
+        'kategoria': 'Premium'
+    });">Osta Luksuskäpy ✨</button>
+
+    <button onclick="window.dataLayer = window.dataLayer || []; window.dataLayer.push({
+        'event': 'lisaa_ostoskoriin',
+        'tuote_nimi': 'Oravan suosikki',
+        'hinta': 5.50,
+        'kategoria': 'Perus'
+    });">Osta Oravan suosikki 🐿️</button>
+</div>
+
+    <div class="card">
+        <h3>3. Yhteydenottolomake</h3>
+        <p>Harjoittele lomakkeen lähetystä (Form Submission).</p>
+        <form class="contact-form" id="tilaus-lomake">
+            <input type="email" placeholder="Sähköpostiosoitteesi" required>
+            <button type="submit">Tilaa uutiskirje</button>
+        </form>
+    </div>
+
+    <hr>
+    <p><small>Vinkki: Avaa selaimen Console (F12) nähdäksesi mitä tapahtuu.</small></p>
+</body>
+</html>
